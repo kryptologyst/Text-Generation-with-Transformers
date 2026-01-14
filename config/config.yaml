@@ -1,0 +1,19 @@
+model:
+  name: "gpt2"
+  device: "auto"
+  use_pipeline: true
+  cache_dir: null
+
+generation:
+  max_length: 200
+  num_return_sequences: 1
+  temperature: 0.7
+  top_p: 0.9
+  top_k: 50
+  no_repeat_ngram_size: 2
+  do_sample: true
+
+data_dir: "data"
+output_dir: "outputs"
+log_level: "INFO"
+random_seed: 42
